@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Task.destroy_all
+
+t = Task.create!(name: "Do the dishes")
+puts "Task #{t.name} created!"
+
+t = Task.create!(name: "Walk the dog")
+puts "Task #{t.name} created!"
+
+t = Task.create!(name: "Take flight tickets")
+puts "Task #{t.name} created!"
